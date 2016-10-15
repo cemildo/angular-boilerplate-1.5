@@ -1,0 +1,30 @@
+<navbar></navbar>
+<header>
+  <search></search>
+</header>
+<main>
+  <div class="beacon col-sm-12 col-xs-12">
+    <div class="col-sm-12 col-xs-12 no-padding">
+      <table class="table margin-top-30">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Isim</th>
+            <th>Ev tel</th>
+            <th>Adres</th>
+            <th>Cep</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr ng-repeat="beacon in bc.beacons">
+            <td class="icon-container"><i ng-click="bc.showDetails(beacon.id)" class="glyphicon glyphicon-plus"></i></td>
+            <td>{{beacon.isim}}</td>
+            <td>{{beacon.ev}}</td>
+            <td>{{beacon.adres}}</td>
+            <td>{{beacon.cep}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
